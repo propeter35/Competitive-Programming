@@ -1,0 +1,42 @@
+/* 
+	Author : propeter35
+	Date : 1/26/2021
+*/
+ 
+#include <bits/stdc++.h>
+using namespace std;
+ 
+#define all(x) (x).begin(), (x).end()
+#define rall(x) (x).rbegin(), (x).rend()
+ 
+#define endl '\n'
+// code
+	
+void run_case() {
+	int n;
+	cin >> n;
+	for(int i = 1; i <= n; i++) {
+		int x;
+		cin >> x;
+		x = abs(x);
+		if(i % 2 == 0) {
+			x = -x;
+		}
+		cout << x << " ";
+	}
+	cout << endl;
+}
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+	
+	long long test;
+	
+	cin >> test;
+	
+	//~ test = 1;
+	
+	while(test--) {
+		run_case();
+	}
+}
