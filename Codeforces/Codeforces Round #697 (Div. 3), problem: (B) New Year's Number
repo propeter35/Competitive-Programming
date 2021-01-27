@@ -1,0 +1,35 @@
+/* 
+	Author : propeter35
+	Date : 1/25/2021
+*/
+ 
+#include <bits/stdc++.h>
+using namespace std;
+ 
+#define all(x) (x).begin(), (x).end()
+#define rall(x) (x).rbegin(), (x).rend()
+ 
+// code
+	
+void run_case() {
+	long long n;
+	cin >> n;
+	while(n >= 2020 && n % 2021 != 0) {
+		n -= 2020;
+	}
+	cout << (n % 2021 == 0 ? "YES" : "NO") << endl;
+}
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+	
+	long long test;
+	
+	cin >> test;
+	
+	//~ test = 1;
+	
+	while(test--) {
+		run_case();
+	}
+}
